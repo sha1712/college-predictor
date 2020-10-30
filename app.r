@@ -16,10 +16,7 @@ ui <- fluidPage(
     # Sidebar panel for inputs ----
     sidebarPanel(
       tags$head(tags$style('body {color:black;}')),
-     # uiOutput ("IMG"),
-      img(src = "b.jpeg",height = 200, width = 300),
-      #img(src = "A.png",height = 200, width = 200),
-      # Input: Selector for choosing dataset ----
+     
       selectInput(inputId = "dataset",
                   label = "Choose your board:",
                   choices = c("SSC", "ICSE", "CBSE","IB")),
